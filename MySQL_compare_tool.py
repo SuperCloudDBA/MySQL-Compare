@@ -19,7 +19,7 @@ information_schema.STATISTICS
 where index_name != 'PRIMARY' and table_schema not in ('mysql','information_schema')
 GROUP BY table_schema , table_name , index_type, index_name,NON_UNIQUE;
 
-AIA友邦对比小程序优化目标：
+对比小程序优化目标：
 1.解决索引对比时区分大小写的问题
 2.增加视图结构的对比
 3.增加视图、表（information_schema.tables）的对象级别对比
